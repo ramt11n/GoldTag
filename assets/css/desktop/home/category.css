@@ -1,0 +1,33 @@
+.category{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.category-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.category h3{
+    font-family: goldtag;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.categories img{
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.categories img:hover{
+    opacity: .7;
+}

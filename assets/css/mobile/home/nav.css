@@ -1,0 +1,190 @@
+nav{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 100%;
+    background-color: #32323284;
+}
+
+.nav-container{
+    width: 34%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 15px 0 15px 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-container label{
+    width: 100%;
+    font-family: goldtag;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container .login-options{
+    background-color: #323232;
+    width: 100%;
+    height: 37px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-container .login-options a{
+    text-decoration: none;
+    font-family: goldtag;
+    color: #E0E0E0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+
+.loc{
+    width: 77px;
+    height: 34px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.loc span{
+    font-family: goldtag;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #616161;
+}
+
+.logo svg{
+    width: 185px;
+    object-fit: cover;
+}
+
+.nav-container ul{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+.nav-container ul li{
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    border-bottom: 1px solid #61616131;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container ul li a{
+    text-decoration: none;
+}
+
+.nav-container ul li:nth-of-type(1){
+    background-color: #FFFFFF;
+}
+.nav-container ul li:nth-of-type(2){
+    background-color: #FBFBFB;
+}
+.nav-container ul li:nth-of-type(3){
+    background-color: #FFFFFF;
+}
+.nav-container ul li:nth-of-type(4){
+    background-color: #FBFBFB;
+}
+.nav-container ul li:nth-of-type(5){
+    background-color: #FFFFFF;
+}
+.nav-container ul li:nth-of-type(6){
+    background-color: #FBFBFB;
+    border-bottom: none;
+}
+
+.nav-container ul li a{
+    font-family: goldtag;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+/* استایل های اصلی */
+nav.mobile {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  
+  .nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+  
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 70%;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 15px 0;
+  }
+  
+  #navmenu:checked ~ nav .nav-container {
+    left: 30%;
+  }
+  
+  #navmenu:checked ~ nav .nav-overlay {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  /* استایل های تکمیلی */
+  .menu-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-container label[for="navmenu"] {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }

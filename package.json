@@ -1,0 +1,16 @@
+{
+  "name": "goldtag-project",
+  "version": "1.0.1",
+  "description": "goldtagkala website prototype",
+  "license": "ISC",
+  "author": "K-Shakib",
+  "type": "\\",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "swiper": "^11.2.4"
+  }
+}

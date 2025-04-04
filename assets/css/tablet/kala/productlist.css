@@ -1,0 +1,917 @@
+.goldtag-kala{
+    width: 100%;
+    border-bottom:  0.8px solid rgba(0, 0, 0, .07);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: top;
+}
+
+/* right-side */
+.goldtag-kala .aside {
+    display: none;
+}
+
+
+/* left-side */
+.goldtag-kala  .left-side .Category-desktop{
+    display: none;
+}
+
+.goldtag-kala  .left-side .category-tab-m{
+    width: 100%;
+    background-color: white;
+    font-family: goldtag;
+    direction: rtl;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+
+.goldtag-kala  .left-side .category-tab-m .first-Category{
+    text-decoration: none;
+    color: #797979;
+    font-size: 13px;
+}
+
+.goldtag-kala  .left-side .category-tab-m .first-Category::after{
+    content: "»" ;
+    margin: 0 .5em;
+    font-size: 1.25em;
+}
+
+.goldtag-kala  .left-side .category-tab-m  a:nth-of-type(2){
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+
+.goldtag-kala  .left-side .category-tab-m  .tehran-kala{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-bottom: 0.4px solid #ececec;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+
+.goldtag-kala  .left-side .category-tab-m  .tehran-kala .gold-tehran a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.goldtag-kala  .left-side .category-tab-m  .tehran-kala .gold-tehran a span{
+    color: rgb(115, 115, 115);
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+
+
+/* cards */
+.goldtag-kala  .left-side .cards{
+    direction: rtl;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 10px;
+    row-gap: 15px;
+    column-gap: 2px;
+    justify-content: space-around;
+    align-content:start ;
+    font-family: goldtag;
+    overflow: hidden !important;
+}
+
+.goldtag-kala  .left-side .cards .product-cards{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    direction: rtl;
+    font-family: goldtag;
+    margin-top: 20px;
+} 
+
+
+.goldtag-kala  .left-side .cards  .card {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: column-reverse nowrap;
+    transition: 300ms;
+    border-radius: 5px;
+    border: 0.5px solid rgb(222, 222, 222);
+    box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.06);
+    position: relative;
+    height: auto !important;
+    min-height: 350px;
+    flex-direction: column;
+    padding-top: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Image Section (70% of card height) */
+.goldtag-kala  .left-side .cards .card .product-cards .card-image {
+    height: 210px !important; /* 60% of 350px */
+    flex-shrink: 0;
+    position: relative; /* For sold-out overlay */
+    margin-top: -1 !important;
+    border-radius: 5px 5px 0 0 !important;
+    overflow: hidden !important;
+    position: relative;
+    top: 0px; /* Pull up to eliminate border gap */
+}
+
+.goldtag-kala .left-side .cards .card:nth-of-type(n) .product-cards .card-image {
+    height: 210px !important;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+}
+
+.goldtag-kala .left-side .cards .card-image img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+}
+
+.goldtag-kala  .left-side .cards .card .product-cards .card-image .sale{
+    display: none;
+}
+
+
+
+.goldtag-kala  .left-side .product-cards .cards .card .product-cards .card-information{
+    height: auto !important;
+    flex-grow: 1;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.goldtag-kala  .left-side .cards  .card .product-cards .card-information h3{
+    color: rgb(51, 51, 51);
+    font-size: 16px !important;
+    font-weight: 400;
+    line-height:1.3 ;
+    margin: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+.goldtag-kala  .left-side .cards  .card .product-cards .card-information p {
+    color: rgb(97, 97, 97);
+    font-size: 13px !important;
+    font-weight: 400;
+    margin: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Restore Visible Elements */
+.goldtag-kala .left-side .cards .product-offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    margin-top: auto; /* Push to bottom */
+}
+
+
+.goldtag-kala  .left-side .cards  .card .product-cards  .product-offer{
+    display: flex;
+    flex-flow: row wrap;
+    height: 40px;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.goldtag-kala .left-side .cards .product-offer svg {
+    order: 2;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.goldtag-kala  .left-side .cards  .card .product-cards .product-offer .right-info svg{
+    width: 35px;
+   position: absolute;
+   bottom: 70px;
+   left: 0;
+}
+
+.goldtag-kala  .left-side .cards  .card .product-cards .product-offer .left-info{
+    color: rgb(188, 65, 65);
+    font-size: 16px !important;
+    font-weight: 500px;
+    font-family: goldtag;
+    font-size: 18px;
+    font-weight: 600 ;
+    font-family: goldtag-numbers;
+    position: static !important;
+    left: 0;
+    margin-left: 0;
+    margin-right: auto;
+    bottom: 85px; /* Adjusted for 375px card height */
+    order: 1;
+    white-space: nowrap;
+}
+
+.goldtag-kala  .left-side .cards  .card  .product-cards .product-offer .left-info::after{
+    content: "تومان";
+    font-family: goldtag;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.goldtag-kala  .left-side .cards  .card  .product-cards .product-offer .left-info h3{
+    color: rgb(158, 158, 158);
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: line-through;
+    margin-left: 10px;
+
+}
+
+.goldtag-kala  .left-side .cards  .card  .product-cards .product-offer .center-info{
+    direction: rtl;
+    border: 1px solid #8b8b8b;
+    border-radius: 4px;
+    width: 110px;
+    height: 28px;
+    font-family: goldtag-numbers;
+    font-size: 3px;
+    font-weight: 600;
+    color: rgb(62, 62, 62);
+    background-color: rgba(248, 249, 250, .95);
+    position: absolute;
+    right: 8px;
+    margin-right: 8px;
+    bottom: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+    padding: 0 8px;
+
+}
+
+.goldtag-kala  .left-side .cards  .card  .product-cards .product-offer .center-info svg{
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.goldtag-kala  .left-side .cards  .card  .product-cards .product-offer .center-info::after{
+    content: "فروخته شده";
+    font-family: goldtag;
+    font-size: 12px;
+    font-weight: 200;
+    color: #797979;
+    margin-right: 4px;
+    line-height: 25px;
+}
+
+
+/* .goldtag-kala  .left-side .cards  .card:hover{
+    transform: translatex(1px) translateY(6px);
+    box-shadow: 0px 1px 13px -3px rgba(0,0,0,0.2);
+} */
+
+.goldtag-kala .left-side .cards .card::before {
+    right: 0; /* RTL alignment */
+    left: auto;
+    height: 210px !important;
+    top: 0 !important;
+    bottom: auto !important;
+    border-radius: 5px 5px 0 0 !important; /* Match image radius */
+}
+
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(1) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/703502062_1740313387__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(2) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+     background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1751420528_1740319268__750-544.jpg"); 
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards   .card:nth-of-type(2)::before{
+    content: "موجودی به اتمام رسید";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px !important; /* Match image height */
+    background: rgba(0,0,0,0.7) !important;
+    color: white;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(3) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1974829201_1740319487__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(4) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1022047346_1740300263__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(5) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/614915138_1740233729__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+.goldtag-kala  .left-side .cards   .card:nth-of-type(5)::before{
+    content: "موجودی به اتمام رسید";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px !important; /* Match image height */
+    background: rgba(0,0,0,0.7) !important;
+    color: white;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(6) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/258898692_1734597158__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(7) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/806688771_1740224265__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(8) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/874273803_1738417057__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(9) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1223970390_1736600560__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(10) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/157205310_1737979189__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(11) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/739896834_1740051856__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(12) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1773126267_1740832944__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(13) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1452741919_1738231581__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+.goldtag-kala  .left-side .cards   .card:nth-of-type(13)::before{
+    content: "موجودی به اتمام رسید";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px !important; /* Match image height */
+    background: rgba(0,0,0,0.7) !important;
+    color: white;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(13) .product-cards  .product-offer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 65px;
+    justify-content: center;
+    height: 40px;
+}
+
+
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(14) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/955657510_1737294462__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(15) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1086249823_1735371672__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(16) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1588253822_1735219997__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(17) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/673008457_1734444326__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(18) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1564076598_1732194408__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala .left-side .cards .card:nth-of-type(19) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1677924705_1738748634__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(20) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/690163702_1738822959__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+}
+
+
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(21) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/372413952_1728740631__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(22) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1869879528_1727076492__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(23) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/963418500_1645953989__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(24) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/768091987_1738672953__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(25) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/240609889_1738170920__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+}
+
+.goldtag-kala  .left-side .cards   .card:nth-of-type(25)::before{
+    content: "موجودی به اتمام رسید";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 210px !important; /* Match image height */
+    background: rgba(0,0,0,0.7) !important;
+    color: white;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    z-index: 1;
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(26) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1374730233_1736081469__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(27) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1809331466_1732194345__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(28) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1753270623_1725974686__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(29) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/999954990_1725195126__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(30) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/259796042_1739801438__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+
+
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(31) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/1370229989_1739792977__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+}
+
+.goldtag-kala  .left-side .cards .card:nth-of-type(32) .product-cards .card-image{
+    width: 100%;
+    height: 395px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdn3.goldtag.net/web/uploads/pictures/310x194/618368126_1735046818__750-544.jpg");
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 0.8px solid rgba(0, 0, 0, .07);
+    align-self: center;
+}
+
+/* Nuclear Reset for Image Containers */
+.goldtag-kala .left-side .cards .card .product-cards .card-image {
+    height: 210px !important;
+    margin-top: -3px !important;
+    top: 0 !important;
+    border-radius: 5px 5px 0 0 !important;
+    background-position: top center !important;
+}
+
+/* Override All Specific Card Image Heights */
+.goldtag-kala .left-side .cards .card [class*="nth-of-type"] .card-image,
+.goldtag-kala .left-side .cards .card .product-cards .card-image {
+    height: 210px !important;
+    min-height: 210px !important;
+    max-height: 210px !important;
+}
+
+/* Card Structure Enforcement */
+.goldtag-kala .left-side .cards .card {
+    padding-top: 0 !important;
+    gap: 0 !important;
+    row-gap: 0 !important;
+}
+
+/* Remove Inherited Spacing */
+.goldtag-kala .left-side .cards .product-cards {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* CONTAIN (show full image with empty space) */
+.goldtag-kala .left-side .cards .card-image {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+/* Fixed Box Styling + Positioning */
+.goldtag-kala .left-side .cards .card .product-cards .product-offer .center-info {
+    /* Box Styling */
+    border: 1px solid #8b8b8b !important;
+    border-radius: 4px !important;
+    background: rgba(248, 249, 250, 0.95) !important;
+    
+    /* Positioning */
+    position: absolute !important;
+    right: 8px !important;
+    bottom: 20px !important;
+    z-index: 500 !important;
+    
+    /* Content Layout */
+    padding: 0 10px !important;
+    min-width: 140px !important;
+    height: 28px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    direction: rtl !important;
+}
+
+/* SVG */
+.goldtag-kala .left-side .cards .card .product-cards .product-offer .center-info svg {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Number */
+.goldtag-kala .left-side .cards .card .product-cards .product-offer .center-info {
+    font-family: goldtag-numbers !important;
+    font-size: 14px !important;
+    color: rgb(62, 62, 62) !important;
+}
+
+/* فروخته شده Text */
+.goldtag-kala .left-side .cards .card .product-cards .product-offer .center-info::after {
+    content: "فروخته شده" !important;
+    font-family: goldtag !important;
+    font-size: 12px !important;
+    color: #797979 !important;
+    white-space: nowrap !important;
+}

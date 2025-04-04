@@ -1,0 +1,238 @@
+.subscribe{
+    width: 100%;
+    border-top:  0.8px solid rgba(0, 0, 0, .07);
+    padding-bottom: 48px;
+    border-bottom:  0.8px solid rgba(0, 0, 0, .07);
+    padding-top: 48px;
+    background-image: linear-gradient(0deg, #fdfdf8, #fff)
+    
+}
+
+.subscribe .subscribe-container{
+    width: 80%;
+    height: 168px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.subscribe .subscribe-container .message{
+    align-self: center;
+}
+
+
+.subscribe .subscribe-container h3{
+    font-family: goldtag;
+    color: rgb(97, 97, 97);
+    font-size: 16px;
+    font-weight: 300;
+    align-self:center;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+
+.subscribe .subscribe-container .email-add {
+    width: 395px;
+    height: 30px;
+    border: 0.8px solid rgba(0, 0, 0, .07) ;
+    align-self: center;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.subscribe .subscribe-container .email-add span{
+    font-family: goldtag;
+    font-size:12px ;
+    font-weight: 500;
+    color: rgb(67, 111, 190);
+    margin-left: 5px;
+}
+
+
+.subscribe .subscribe-container .email-add svg{
+    margin-left: 2px;
+    
+}
+
+.subscribe .subscribe-container .email-add input{
+    width: 300px;
+    height: 25px;
+    align-self: center;
+    direction: rtl;
+    outline: none;
+    border: none;
+}
+
+.subscribe .subscribe-container .email-add input::placeholder{
+    color: rgb(168, 168, 168);
+    font-family: goldtag;
+    font-weight: 300;   
+}
+
+
+footer{
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .Communication{
+    width: 100%;
+    max-width: 1136px;
+    margin-top: 30px;
+    font-family: goldtag;
+    padding: 20px 0;
+    border-bottom:  0.8px solid rgba(0, 0, 0, .07);
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around;
+    align-items: start;
+}
+
+footer  .Communication-list{
+    width: 272px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+footer .Communication .Communication-list ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+}
+
+footer .Communication .Communication-list ul p{
+    color: black;
+    font-size: 16px;
+    font-weight:600;
+
+}
+
+footer .Communication .Communication-list ul li{
+    width:250px;
+}
+
+footer .Communication .Communication-list ul li a{
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+footer .Communication .Communication-list ul li a:hover{
+    color: rgb(117, 155, 231) ;
+}
+
+footer .Communication .Communication-list ul li a svg{
+    vertical-align: top;
+    margin-left: 5px;
+}
+
+
+
+footer .Communication .Communication-list:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) a{
+    color: rgb(117, 155, 231);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer .Communication .Communication-final-list{
+    width: 330px;
+    height: 270px;
+    display: inline-block;
+    margin-top: 50px;
+    vertical-align: top;
+}
+
+footer .Communication .Communication-final-list h4{
+    font-size: 15px;
+    color: rgb(63,64,100);
+    margin-bottom: 15px;
+}
+
+footer .Communication .Communication-final-list h4:nth-of-type(2){
+    margin-top: 50px;
+}
+
+footer .Communication .Communication-final-list a{
+    margin-left: 30px;
+}
+
+
+
+
+footer .Communication .Communication-list ul p:nth-last-of-type(1){
+    color: black;
+    font-size: 16px;
+    font-weight:600;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(3) a{
+    color: rgb(55, 174, 226);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(2) a{
+    color: rgb(225, 48, 108);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(1) a{
+    color: rgb(58, 85, 159);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+/* second-header */
+footer .second-footer{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    margin: 0 auto;
+    border-top:  0.8px solid rgba(0, 0, 0, .07);
+    justify-content:space-around;
+}
+
+footer .second-footer p{
+    display: inline-block;
+    flex-grow: 3;
+    font-family: goldtag;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 50px;
+}
+
+footer .second-footer .left-second-footer a{
+    flex-grow: 1;
+    font-family: goldtag;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 50px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+footer .second-footer .left-second-footer a:hover{
+    color:  rgb(117, 155, 231) ;
+
+}
+

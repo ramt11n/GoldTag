@@ -1,0 +1,288 @@
+.sign-up{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: stat;
+    align-items: start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.signup-container{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+.signup-container h2{
+    font-family: goldtag;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 20px 10px;
+}
+
+.sign-up .rt-s{
+    width: 100%;
+    direction: rtl;
+    padding: 10px;
+}
+
+/* first part */
+.sign-up .rt-s .sinup-formpart .first-part{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    border-bottom: 0.8px solid #e1e3df;
+    gap: 8px;
+    margin-bottom: 8px;
+    
+}
+
+
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    font-family: goldtag;
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part label{
+    color: rgb(94, 105, 113);
+    font-size: 13.6px;
+    font-weight :400
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part label span{
+    color: red;
+}
+
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part input{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    border: 1px solid #d1d5da
+    
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part input:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part select{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    border: 1px solid #d1d5da;
+    font-family: goldtag;
+    color: rgb(57, 57, 57);
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part select:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part input::placeholder{
+    font-family: goldtag;
+    color: rgb(154, 154, 154);
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part select option{
+    font-family: goldtag;
+}
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part:nth-of-type(5) input::placeholder{
+    padding-left: 46px;
+}
+
+
+.sign-up .rt-s .sinup-formpart .first-part .form-part:nth-of-type(7){
+    grid-row: 4/5;
+    grid-column: 1/3;
+
+}
+
+
+/* second part */
+.sign-up .rt-s .sinup-formpart  .second-part{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+    border-bottom: 0.8px solid #e1e3df;
+    margin-top: 12px;
+    gap: 8px;
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: goldtag;
+}
+
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part label{
+    color: rgb(94, 105, 113);
+    font-size: 13.6px;
+    font-weight :400
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part label span{
+    color: red;
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part input{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    border: 1px solid #d1d5da
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part input:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part select{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    padding: 8px 10px;
+    border: 1px solid #d1d5da;
+    font-family: goldtag;
+    color: rgb(57, 57, 57);
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part select:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part:nth-last-of-type(2) select{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #d1d5da
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part:nth-last-of-type(2) select:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part:nth-last-of-type(3) select{
+    outline: none;
+    border: none;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #d1d5da
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part:nth-last-of-type(3) select:focus{
+    border: 1px solid #2663ae
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part input::placeholder{
+    font-family: goldtag;
+    color: rgb(154, 154, 154);
+}
+
+.sign-up .rt-s .sinup-formpart .second-part .form-part select option{
+    font-family: goldtag;
+}
+
+
+
+/*third-part */
+.signup-form .sinup-formpart .third-part{
+    font-family: goldtag;
+}
+
+.signup-form .sinup-formpart .third-part .first-control-label {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.signup-form .sinup-formpart .third-part .first-control-label input[type=checkbox]{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    align-self: center;
+}
+
+.signup-form .sinup-formpart .third-part .first-control-label label{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.signup-form .sinup-formpart .third-part .second-control-label {
+    cursor: pointer;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.signup-form .sinup-formpart .third-part .second-control-label input[type=checkbox]{
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    padding-right: 24px;
+}
+
+.signup-form .sinup-formpart .third-part .second-control-label label{
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+
+}
+
+.second-control-label label span:nth-of-type(1){
+    color: rgb(64, 141, 188);
+}
+
+.second-control-label label span:nth-of-type(2){
+    color: red;
+}
+
+.signup-form .create-account{
+    width: 100%;
+    padding-top: 18px;
+}
+
+.frame{
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-content: center;
+    width: 100%;
+    height: 65px;
+    background-color: #EEEEEE;
+}
+
+.signup-form .create-account .frame button{
+    margin-right: 25px;
+    background-color: #4ca95e;
+    color: #fff;
+    font-family: goldtag;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 6px 12px;
+    border: 0.8px solid rgb(76, 169, 94);
+
+}

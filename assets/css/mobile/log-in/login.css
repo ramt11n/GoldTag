@@ -1,0 +1,159 @@
+.login{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.login-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 25px;
+}
+
+.login-container h3{
+    padding: 0 12px;
+    font-family: goldtag;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.login-main{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.login-main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: start;
+    font-family: goldtag;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.login-main a{
+    color: #3CC2EA;
+    padding: 0 12px;
+}
+
+.login-main a:hover{
+    color: #222222;
+}
+
+.login-main span{
+    color: #E83C37;
+}
+
+.login-main label{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-main ::placeholder{
+    font-family: goldtag;
+    padding: 10px;
+}
+
+.login-main input{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.remember-me input{
+    width: unset;
+    height: unset;
+}
+
+.imail{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 0 12px;
+    gap: 15px;
+    align-items: start;
+}
+
+.imail input{
+    border: 1px solid #00000036;
+}
+
+.login-passcode{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0 12px;
+    gap: 15px;
+}
+
+.login-passcode input{
+    border: 1px solid #00000036;
+}
+
+.remember-me{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 0 12px;
+}
+
+.signin-login{
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-family: goldtag;
+    background-color: #EEEEEE;
+}
+
+.signin-login .signin-login-green{
+    width: 52px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4CA95E;
+    font-family: goldtag;
+    border: unset;
+    cursor: pointer;
+}
+
+.signin-login .signin-login-red{
+    width: 68px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #BC4141;
+    font-family: goldtag;
+    border: unset;
+    cursor: pointer;
+}
+
+.signin-login .signin-login-green:hover{
+    background-color: #408F4F;
+}
+
+.signin-login .signin-login-red:hover{
+    background-color: #A03737;
+}

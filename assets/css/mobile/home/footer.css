@@ -1,0 +1,230 @@
+.subscribe{
+    width: 100%;
+    border-bottom:  0.8px solid rgba(0, 0, 0, .07);
+    background-image: linear-gradient(0deg, #fdfdf8, #fff)
+    
+}
+
+.subscribe .subscribe-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.subscribe .subscribe-container .message{
+    align-self: center;
+}
+
+
+.subscribe .subscribe-container h3{
+    width: 264px;
+    text-align: center;
+    font-family: goldtag;
+    color: rgb(97, 97, 97);
+    font-size: 16px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+
+.subscribe .subscribe-container .email-add {
+    width: 97%;
+    height: 25px;
+    border: 0.8px solid rgba(0, 0, 0, .07) ;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe .subscribe-container .email-add span{
+    font-family: goldtag;
+    font-size:12px ;
+    font-weight: 500;
+    color: rgb(67, 111, 190);
+}
+
+.subscribe .subscribe-container .email-add input{
+    width: 69%;
+    height: 22px;
+    direction: rtl;
+    outline: none;
+    border: none;
+}
+
+.subscribe .subscribe-container .email-add input::placeholder{
+    color: rgb(168, 168, 168);
+    font-family: goldtag;
+    font-weight: 300;
+}
+
+
+footer{
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: goldtag;
+}
+
+footer .Communication{
+    width: 100%;
+    margin-top: 30px;
+    font-family: goldtag;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: 300px 140px;
+    justify-content: center;
+    align-items: start;
+    padding: 5px;
+}
+
+footer  .Communication-list{
+    width: 138px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+}
+
+footer .Communication .Communication-list ul{
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+
+.Communication-list ul p{
+    color: black;
+    font-size: 16px;
+    font-weight:600;
+
+}
+
+footer .Communication .Communication-list ul li a{
+    max-width: 100%;
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 200ms;
+}
+
+footer .Communication .Communication-list ul li a:hover{
+    color: rgb(117, 155, 231) ;
+}
+
+footer .Communication .Communication-list ul li a svg{
+    margin-left: 5px;
+}
+
+footer > .Communication-list{
+    align-self: start;
+    margin-right: 15px;
+    margin-bottom: 16px;
+}
+
+footer .Communication-list img{
+    width: 65px;
+    position: relative;
+    right: 20%;
+    top: 40px;
+}
+
+footer .Communication .Communication-list:nth-of-type(1) ul:nth-of-type(1) li:nth-of-type(1) a{
+    color: rgb(117, 155, 231);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+footer .Communication .Communication-final-list h4{
+    font-size: 15px;
+    color: rgb(63,64,100);
+    margin-bottom: 15px;
+}
+
+footer .Communication .Communication-final-list a{
+    margin-left: 30px;
+}
+
+
+footer .Communication .Communication-list:nth-of-type(3) p{
+    color: black;
+    font-size: 16px;
+    font-weight:600;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2){
+    position: relative;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1){
+    position: absolute;
+    top: 30px;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(3) a{
+    color: rgb(55, 174, 226);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(2) a{
+    color: rgb(225, 48, 108);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+
+footer .Communication .Communication-list:nth-last-of-type(2) ul:nth-last-of-type(1) li:nth-last-of-type(1) a{
+    color: rgb(58, 85, 159);
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+/* second-header */
+footer .second-footer{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+    border-top:  0.8px solid rgba(0, 0, 0, .07);
+    padding: 5px;
+}
+
+footer .second-footer p{
+    height: 30px;
+    font-family: goldtag;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 50px;
+}
+
+footer .second-footer .left-second-footer a{
+    font-family: goldtag;
+    color: rgb(128, 128, 128);
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 50px;
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+footer .second-footer .left-second-footer a:hover{
+    color:  rgb(117, 155, 231) ;
+
+}
+

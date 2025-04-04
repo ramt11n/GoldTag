@@ -1,0 +1,19 @@
+.banner-slider{
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.banner-slider .swiper{
+    width: 100%;
+    max-width: 1136px;
+    height: 451px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.banner-slider .swiper-slide img{
+    object-fit: cover;
+}

@@ -1,0 +1,163 @@
+.login{
+    width: 100%;
+    height: 357px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.login-container{
+    width: 1152px;
+    height: 357px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.rt-l{
+    width: 521px;
+    height: 100%;
+    background-color: #fff;
+    border-top: 2px solid #6161611d;
+    border-right: 2px solid #6161611d;
+    border-bottom: 2px solid #6161611d;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 2px 2px 14px -10px rgba(0,0,0,0.5);
+}
+
+.rt-l{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px;
+    font-family: goldtag;
+    font-size: 14px;
+    gap: 15px;
+}
+
+.rt-l a{
+    color: #3CC2EA;
+}
+
+.rt-l a:hover{
+    color: #222222;
+}
+
+.rt-l span{
+    color: #E83C37;
+}
+
+.rt-l label{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.rt-l ::placeholder{
+    font-family: goldtag;
+    padding: 10px;
+}
+
+.rt-l input{
+    width: 100%;
+    height: 38px;
+    border-radius: 5px;
+}
+
+.remember-me input{
+    width: unset;
+    height: unset;
+}
+
+.imail{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: start;
+}
+
+.imail input{
+    border: 1px solid #00000036;
+}
+
+.login-passcode{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: start;
+    gap: 15px;
+}
+
+.login-passcode input{
+    border: 1px solid #00000036;
+}
+
+.remember-me{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.signin-login{
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    font-family: goldtag;
+    border-top: 1px solid #00000036;
+}
+
+.signin-login .signin-login-green{
+    width: 52px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4CA95E;
+    font-family: goldtag;
+    border: unset;
+    cursor: pointer;
+}
+
+.signin-login .signin-login-red{
+    width: 68px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: #BC4141;
+    font-family: goldtag;
+    border: unset;
+    cursor: pointer;
+}
+
+.signin-login .signin-login-green:hover{
+    background-color: #408F4F;
+}
+
+.signin-login .signin-login-red:hover{
+    background-color: #A03737;
+}
+
+.lt-l{
+    background-image: url(https://cdn3.goldtag.net/frontend/assets/v1.4.39/images/tmp/signin.jpg);
+    background-size: cover;
+    width: 521px;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}

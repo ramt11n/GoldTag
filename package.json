@@ -1,9 +1,9 @@
 {
   "name": "goldtag-project",
   "version": "1.0.1",
-  "description": "goldtagkala website prototype",
+  "description": "goldtagkala website clone",
   "license": "ISC",
-  "author": "K-Shakib",
+  "author": "ramt11n",
   "type": "\\",
   "main": "index.js",
   "scripts": {
